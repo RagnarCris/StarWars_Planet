@@ -9,7 +9,8 @@ export const globalStyles = StyleSheet.create({
   itemText: {
     marginVertical: 8,
     marginLeft: 10,
-    fontSize: 11,
+    fontFamily: 'starjedi',
+    fontSize: 10,
   },
   container: {
     flex: 1,
@@ -23,18 +24,43 @@ export const globalStyles = StyleSheet.create({
     justifyContent: 'center',
   },
   list: {
-    marginTop: 20,
+    padding: 40,
     flex: 1,
+    flexDirection: 'column',
+    justifyContent: 'center',
+    borderColor: 'yellow',
+    borderWidth: 2,
+    borderStyle: "solid",
+    borderRadius: 10,
+    marginTop: 10
   },
   item: {
     padding: 16,
     marginTop: 16,
-    borderColor: '#bbb',
-    borderWidth: 1,
+    borderColor: 'black',
+    borderWidth: 2,
+    borderStyle: "dashed",
+    borderRadius: 10,
+    flexDirection: 'row',
+    alignItems: 'center',
+    fontFamily: 'starjedi',
+    fontSize: 10,
+  },
+  itemHide: {
+    padding: 16,
+    marginTop: 16,
+    borderColor: 'black',
+    borderWidth: 2,
     borderStyle: "dashed",
     borderRadius: 1,
     borderRadius: 10,
     flexDirection: 'row',
     alignItems: 'center',
+    fontFamily: 'starjedi',
+    fontSize: 10,
+    height: 48
+  },
+  icon: {
+    marginLeft: 220
   }
 });

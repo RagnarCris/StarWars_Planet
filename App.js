@@ -30,8 +30,9 @@ export default function App() {
             },
             headerTintColor: 'yellow',
             headerTitleStyle: {
+              fontFamily: 'starjout',
               fontSize: 18,
-              fontWeight: 'bold',
+              fontWeight: '200',
             },
           }} />
           <Stack.Screen name="PlanetDetails" component={PlanetDetails} options={{
@@ -42,8 +43,9 @@ export default function App() {
             },
             headerTintColor: 'yellow',
             headerTitleStyle: {
+              fontFamily: 'starjout',
               fontSize: 18,
-              fontWeight: 'bold',
+              fontWeight: '200',
             },
           }} />
         </Stack.Navigator>
