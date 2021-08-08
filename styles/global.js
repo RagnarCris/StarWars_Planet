@@ -61,6 +61,6 @@ export const globalStyles = StyleSheet.create({
     height: 48
   },
   icon: {
-    marginLeft: 220
+    marginLeft: 180
   }
 });

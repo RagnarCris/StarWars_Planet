@@ -17,13 +17,15 @@ export default function PlanetDetails({ route, navigation }) {
         })
         .then(data => {
           const key_auto = Math.random().toString();
-          setResidentes(...residentes, {name: data.name, mass: data.mass, key: key_auto});
+          console.log('Chegou no data')
+          setResidentes([{...residentes}, {name: data.name, mass: data.mass, key: key_auto}]);
         })
         .catch((error) => console.error(error))
   }
 
   const showPeople = (residents) => {
     residents.forEach(element => {
+      console.log(element);
       showPerson(element);
     });
   }
