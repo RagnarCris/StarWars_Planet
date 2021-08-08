@@ -10,7 +10,7 @@ export const globalStyles = StyleSheet.create({
     marginVertical: 8,
     marginLeft: 10,
     fontFamily: 'starjedi',
-    fontSize: 10,
+    fontSize: 12,
   },
   container: {
     flex: 1,
@@ -43,7 +43,7 @@ export const globalStyles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     fontFamily: 'starjedi',
-    fontSize: 10,
+    fontSize: 12,
   },
   itemHide: {
     padding: 16,
@@ -56,7 +56,7 @@ export const globalStyles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     fontFamily: 'starjedi',
-    fontSize: 10,
+    fontSize: 12,
     height: 48
   },
   icon: {

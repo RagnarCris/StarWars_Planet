@@ -25,7 +25,7 @@ export default function Home({ navigation }) {
                 }
                 return res.json();
                 })
-                .then(data => {
+                .then(async data => {
                 data.key = Math.random().toString();
                 setPlanets([...planets, data]);
                 console.log(`Planeta: ${data.name}`)
