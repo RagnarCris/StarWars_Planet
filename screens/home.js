@@ -13,10 +13,9 @@ export default function Home({ navigation }) {
     const [planets, setPlanets] = useState([]);
     
     useEffect(() => { 
-        /*
          // Feito pra percorrer de fato todos os planetas, mas ta bugando o FlatList, talvez pela quantidade de planetas, 
          // ou pelo then do fetch realizar um segundo for aparentemente.
-         var i = 1;
+         /* var i = 1;
          for (; i <= 60; i++) {
             console.log(`Passando pelo planeta ${i}`);
             fetch(`https://swapi.dev/api/planets/${i}/?format=json`)

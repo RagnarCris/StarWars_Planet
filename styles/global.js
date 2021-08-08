@@ -24,10 +24,9 @@ export const globalStyles = StyleSheet.create({
     justifyContent: 'center',
   },
   list: {
-    padding: 40,
+    padding: 20,
     flex: 1,
     flexDirection: 'column',
-    justifyContent: 'center',
     borderColor: 'yellow',
     borderWidth: 2,
     borderStyle: "solid",

@@ -15,12 +15,14 @@ export default function PlanetDetails({ route, navigation }) {
           } 
           return res.json();
         })
-        .then(data => {
-          const key_auto = Math.random().toString();
+        .then(async data => {
+          const key = Math.random().toString();
           console.log('Chegou no data')
-          setResidentes([{...residentes}, {name: data.name, mass: data.mass, key: key_auto}]);
+          //setResidentes([...residentes, {name: data.name, mass: data.mass, key: key}]);
+          residentes.push({name: data.name, mass: data.mass, key: key})
         })
         .catch((error) => console.error(error))
+        .finally(() => setShow(true))
   }
 
   const showPeople = (residents) => {
@@ -42,16 +44,20 @@ export default function PlanetDetails({ route, navigation }) {
         </TouchableOpacity>
       </View>
       <View style={globalStyles.list}>
+        {
+          show ?
           <FlatList
           data={residentes}
           renderItem={({ item }) => {
             return (
-              <View>
+              <View key={item.key}>
                   <Text style={globalStyles.item}>Nome: {item.name} / Massa: {item.mass}</Text>
               </View>
             )}
           }
           />
+          : null
+        }
         </View>
     </View>
   );
